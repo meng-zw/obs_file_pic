@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+  <rect width="1200" height="560" fill="#fbfbf8"/>
+  <text x="600" y="60" text-anchor="middle" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="34" font-weight="700" fill="#1f2937">两个密钥不要填反</text>
+  <g font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+    <rect x="95" y="130" width="455" height="330" rx="18" fill="#ffffff" stroke="#2563eb" stroke-width="4"/>
+    <text x="322" y="185" text-anchor="middle" font-size="30" font-weight="700" fill="#1d4ed8">GitHub Token</text>
+    <line x1="145" y1="215" x2="500" y2="215" stroke="#bfdbfe" stroke-width="3"/>
+    <text x="145" y="260" font-size="22" fill="#334155">作用：让 PicList 能写入 GitHub 仓库</text>
+    <text x="145" y="305" font-size="22" fill="#334155">位置：写在 config.json 里</text>
+    <text x="145" y="350" font-size="22" fill="#334155">字段：token</text>
+    <text x="145" y="395" font-size="22" fill="#334155">注意：像密码一样保存，不要公开</text>
+
+    <rect x="650" y="130" width="455" height="330" rx="18" fill="#ffffff" stroke="#16a34a" stroke-width="4"/>
+    <text x="877" y="185" text-anchor="middle" font-size="30" font-weight="700" fill="#15803d">PicList 鉴权 key</text>
+    <line x1="700" y1="215" x2="1055" y2="215" stroke="#bbf7d0" stroke-width="3"/>
+    <text x="700" y="260" font-size="22" fill="#334155">作用：防止别人乱调用上传接口</text>
+    <text x="700" y="305" font-size="22" fill="#334155">位置：Docker 启动命令 -k 后面</text>
+    <text x="700" y="350" font-size="22" fill="#334155">调用：URL 里加 ?key=你的key</text>
+    <text x="700" y="395" font-size="22" fill="#334155">建议：只用字母、数字、下划线</text>
+  </g>
+</svg>
