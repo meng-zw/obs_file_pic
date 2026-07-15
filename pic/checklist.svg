@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620">
+  <rect width="1200" height="620" fill="#f8fafc"/>
+  <text x="600" y="62" text-anchor="middle" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="34" font-weight="700" fill="#111827">上传失败时，按这个顺序排查</text>
+  <g font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="24" fill="#1f2937">
+    <rect x="150" y="120" width="900" height="72" rx="12" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="195" y="166">1. 浏览器打开 http://飞牛IP:36677/heartbeat</text>
+    <text x="990" y="166" text-anchor="end" fill="#16a34a" font-weight="700">服务是否活着</text>
+
+    <rect x="150" y="210" width="900" height="72" rx="12" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="195" y="256">2. Obsidian 插件地址不要填 127.0.0.1</text>
+    <text x="990" y="256" text-anchor="end" fill="#2563eb" font-weight="700">改成飞牛 IP</text>
+
+    <rect x="150" y="300" width="900" height="72" rx="12" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="195" y="346">3. URL 里必须带 ?key=你的鉴权key</text>
+    <text x="990" y="346" text-anchor="end" fill="#ea580c" font-weight="700">key 要一致</text>
+
+    <rect x="150" y="390" width="900" height="72" rx="12" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="195" y="436">4. 检查 config.json 是否合法、repo 是否正确</text>
+    <text x="990" y="436" text-anchor="end" fill="#7c3aed" font-weight="700">别漏逗号</text>
+
+    <rect x="150" y="480" width="900" height="72" rx="12" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="195" y="526">5. GitHub token 是否有写入仓库权限</text>
+    <text x="990" y="526" text-anchor="end" fill="#dc2626" font-weight="700">能否上传</text>
+  </g>
+</svg>
