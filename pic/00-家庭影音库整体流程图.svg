@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1280" viewBox="0 0 1000 1280" role="img" aria-labelledby="title desc">
+  <title id="title">家庭影音库整体流程图</title>
+  <desc id="desc">合法影音文件存入夸克网盘，由飞牛 OS 远程挂载，再由飞牛影视扫描刮削，最后在电视、手机和平板端播放。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F2F8FF"/>
+      <stop offset="1" stop-color="#E8F1FF"/>
+    </linearGradient>
+    <linearGradient id="primary" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#168BFF"/>
+      <stop offset="1" stop-color="#0865E8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#1257A6" flood-opacity="0.13"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#168BFF"/>
+    </marker>
+  </defs>
+
+  <rect width="1000" height="1280" rx="48" fill="url(#bg)"/>
+  <circle cx="110" cy="110" r="120" fill="#168BFF" opacity="0.06"/>
+  <circle cx="910" cy="1160" r="170" fill="#168BFF" opacity="0.07"/>
+
+  <text x="500" y="92" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="44" font-weight="700" fill="#14243A">家庭影音库整体流程</text>
+  <text x="500" y="140" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="23" fill="#5D6C80">网盘存储 · NAS 管理 · 多端播放</text>
+
+  <g filter="url(#shadow)">
+    <rect x="140" y="195" width="720" height="168" rx="30" fill="#FFFFFF"/>
+    <circle cx="245" cy="279" r="56" fill="#E8F3FF"/>
+    <path d="M209 294c0-18 14-32 32-32 7-19 35-23 47-6 19-1 34 11 34 29 0 17-13 30-31 30h-50c-18 0-32-8-32-21z" fill="#168BFF"/>
+    <text x="340" y="257" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="32" font-weight="700" fill="#14243A">1. 夸克网盘存储</text>
+    <text x="340" y="306" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="24" fill="#5D6C80">分类保存合法取得的影音文件</text>
+  </g>
+
+  <path d="M500 379V442" stroke="#168BFF" stroke-width="8" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="140" y="462" width="720" height="168" rx="30" fill="#FFFFFF"/>
+    <circle cx="245" cy="546" r="56" fill="#E8F3FF"/>
+    <rect x="211" y="516" width="68" height="54" rx="8" fill="none" stroke="#168BFF" stroke-width="7"/>
+    <path d="M228 586h34M245 570v16" stroke="#168BFF" stroke-width="7" stroke-linecap="round"/>
+    <text x="340" y="524" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="32" font-weight="700" fill="#14243A">2. 飞牛 OS 远程挂载</text>
+    <text x="340" y="573" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="24" fill="#5D6C80">将网盘目录接入 NAS，配置访问权限</text>
+  </g>
+
+  <path d="M500 646V709" stroke="#168BFF" stroke-width="8" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="140" y="729" width="720" height="168" rx="30" fill="url(#primary)"/>
+    <circle cx="245" cy="813" r="56" fill="#FFFFFF" opacity="0.18"/>
+    <path d="M218 790h54v46h-54zM231 777l8 13M251 777l8 13" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M240 801l20 12-20 12z" fill="#FFFFFF"/>
+    <text x="340" y="791" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="32" font-weight="700" fill="#FFFFFF">3. 飞牛影视扫描刮削</text>
+    <text x="340" y="840" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="24" fill="#EAF4FF">识别片名、分类剧集，生成海报墙</text>
+  </g>
+
+  <path d="M500 913V976" stroke="#168BFF" stroke-width="8" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="140" y="996" width="720" height="180" rx="30" fill="#FFFFFF"/>
+    <text x="500" y="1050" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="31" font-weight="700" fill="#14243A">4. 家庭局域网内多端播放</text>
+    <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="600" fill="#28506F" text-anchor="middle">
+      <rect x="205" y="1080" width="160" height="58" rx="18" fill="#E8F3FF"/>
+      <text x="285" y="1118">📺 电视</text>
+      <rect x="420" y="1080" width="160" height="58" rx="18" fill="#E8F3FF"/>
+      <text x="500" y="1118">📱 手机</text>
+      <rect x="635" y="1080" width="160" height="58" rx="18" fill="#E8F3FF"/>
+      <text x="715" y="1118">▣ 平板</text>
+    </g>
+  </g>
+
+  <text x="500" y="1235" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="21" fill="#6A788A">建议：先用 3～5 个文件跑通流程，再批量导入</text>
+</svg>
