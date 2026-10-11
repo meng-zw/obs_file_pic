@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="520" viewBox="0 0 1440 520" role="img" aria-labelledby="title desc">
+  <title id="title">内网穿透连接原理</title>
+  <desc id="desc">NAS 主动连接中继节点，外出设备访问中继地址，中继通过已建立的连接转发请求和响应。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4f8ff"/>
+      <stop offset="1" stop-color="#edf7ff"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2b85ff"/>
+      <stop offset="1" stop-color="#1557d6"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto">
+      <path d="M1 1 L10 6 L1 11" fill="none" stroke="#4e83d9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <filter id="shadow" x="-10%" y="-15%" width="120%" height="140%">
+      <feDropShadow dx="0" dy="7" stdDeviation="10" flood-color="#5278a8" flood-opacity=".12"/>
+    </filter>
+  </defs>
+  <rect width="1440" height="520" rx="28" fill="url(#bg)"/>
+  <text x="720" y="64" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif" font-size="30" font-weight="700" fill="#17345f">内网穿透：NAS 主动连出去，外部请求再沿隧道回来</text>
+  <rect x="64" y="118" width="330" height="274" rx="24" fill="#fff" filter="url(#shadow)"/>
+  <rect x="555" y="118" width="330" height="274" rx="24" fill="#fff" filter="url(#shadow)"/>
+  <rect x="1046" y="118" width="330" height="274" rx="24" fill="#fff" filter="url(#shadow)"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif" text-anchor="middle">
+    <text x="229" y="174" font-size="24" font-weight="700" fill="#19375f">家中 NAS</text>
+    <text x="229" y="213" font-size="17" fill="#64748b">在内网运行的服务</text>
+    <rect x="148" y="249" width="162" height="74" rx="14" fill="#eaf3ff"/>
+    <rect x="178" y="264" width="102" height="16" rx="5" fill="url(#blue)"/>
+    <rect x="178" y="286" width="102" height="16" rx="5" fill="url(#blue)" opacity=".78"/>
+    <text x="229" y="357" font-size="16" fill="#64748b">无需路由器入站映射</text>
+    <text x="720" y="174" font-size="24" font-weight="700" fill="#19375f">Natfrp 中继节点</text>
+    <text x="720" y="213" font-size="17" fill="#64748b">提供隧道地址并转发流量</text>
+    <circle cx="720" cy="285" r="44" fill="#eaf3ff"/>
+    <path d="M691 293c-12 0-19-8-19-18 0-10 8-18 19-18 5-15 18-24 34-21 12 2 20 10 23 21 12 0 21 8 21 19 0 10-9 17-20 17z" fill="none" stroke="#2877e7" stroke-width="7" stroke-linejoin="round"/>
+    <text x="720" y="357" font-size="16" fill="#64748b">流量可能经过服务商节点</text>
+    <text x="1211" y="174" font-size="24" font-weight="700" fill="#19375f">外出设备</text>
+    <text x="1211" y="213" font-size="17" fill="#64748b">手机 / 笔记本访问隧道地址</text>
+    <rect x="1160" y="242" width="102" height="74" rx="12" fill="#eaf3ff" stroke="#2877e7" stroke-width="4"/>
+    <path d="M1147 327h128l-13 11h-102z" fill="#2877e7"/>
+    <text x="1211" y="373" font-size="16" fill="#64748b">无需知道家中公网 IP</text>
+  </g>
+  <path d="M410 240 H535" fill="none" stroke="#4e83d9" stroke-width="5" marker-end="url(#arrow)"/>
+  <text x="472" y="218" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif" font-size="16" fill="#416da9">NAS 主动建立连接</text>
+  <path d="M895 240 H1026" fill="none" stroke="#4e83d9" stroke-width="5" marker-end="url(#arrow)"/>
+  <text x="960" y="218" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif" font-size="16" fill="#416da9">请求经节点转发</text>
+  <path d="M1025 300 H895" fill="none" stroke="#53a88a" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow)"/>
+  <path d="M535 300 H410" fill="none" stroke="#53a88a" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow)"/>
+  <text x="720" y="466" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif" font-size="17" fill="#52677f">回程数据沿已建立的隧道返回；实际速度、流量与可用性取决于线路和服务商规则</text>
+</svg>
